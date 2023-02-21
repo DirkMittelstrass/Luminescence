@@ -15,8 +15,8 @@
 #'
 #' Thus the function checks for:
 #'
-#' \deqn{abs(E(x) - Var(x)) >= \Theta}
-#'
+#' \deqn{var(x) / mean(x) >= \Theta}
+#' 
 #' With \eqn{\Theta} an arbitrary, user defined, threshold. Values above the
 #' threshold indicating curves comprising a signal.
 #'
