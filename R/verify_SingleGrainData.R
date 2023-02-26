@@ -15,7 +15,7 @@
 #'
 #' Thus the function checks for:
 #'
-#' \deqn{var(x) / mean(x) >= \Theta}
+#' \deqn{Var(x) / Mean(x) > \Theta}
 #' 
 #' With \eqn{\Theta} an arbitrary, user defined, threshold. Values above the
 #' threshold indicating curves comprising a signal.
@@ -92,7 +92,7 @@
 #' that Reg0 curves within a SAR cycle are removed as well. Therefore it is
 #' strongly recommended to use the argument `cleanup = TRUE` carefully.
 #'
-#' @section Function version: 0.2.2
+#' @section Function version: 0.3.0
 #'
 #'
 #' @author
@@ -143,6 +143,8 @@ verify_SingleGrainData <- function(
   verbose = TRUE,
   plot = FALSE
 ){
+  
+  cat("Run DEV version of verify_SingleGrainData\n\n")
 
 
   ##three types of input are allowed:
